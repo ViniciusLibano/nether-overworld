@@ -1,0 +1,16 @@
+.MainInt {
+    width: 40vw;
+    height: 50vh;
+
+    border: 2px solid white;
+    border-radius: 10px;
+    background: rgba(20, 20, 20, 0.9);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    backdrop-filter: blur(10px);
+
+    > div:nth-child(1) {
+        border-right: 2px solid white;
+    }
+}
