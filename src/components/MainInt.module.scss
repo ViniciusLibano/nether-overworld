@@ -14,38 +14,3 @@
         border-right: 2px solid white;
     }
 }
-
-@font-face {
-    font-family: minecraft-font;
-    src: url(../assets/Minecraft.ttf);
-} 
-
-.FormCalc {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-    > div {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 8px;
-        width: 80%;
-
-        border: 2px solid white;
-        border-radius: 10px;
-        font-family: minecraft-font;
-    }
-
-    label {
-        font-size: 1.5em;
-    }
-
-    input {
-        font-size: 1.5em;
-        width: 50%;
-        font-family: minecraft-font;
-        padding: 3px;
-    }
-}

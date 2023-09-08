@@ -1,3 +1,4 @@
+import FormCalc from './FormCalc'
 import styles from './MainInt.module.scss'
 import { useState } from 'react'
 
@@ -62,39 +63,24 @@ export default function MainInt() {
 
     return (
         <div className={styles.MainInt}>
-            <div className={styles.FormCalc}>
-                <h3>Overworld</h3>
-                <p>Coord. Aproximadas</p>
-                <div>
-                    <label htmlFor="xoverworld">X</label>
-                    <input name="xoverworld" type="text" onChange={handleInputOwrdX} value={xOwrd} />
-                </div>
-                <div>
-                    <label htmlFor="yoverworld">Y</label>
-                    <input name="yoverworld" type="text" onChange={handleInputOwrdY} value={yOwrd} />
-                </div>
-                <div>
-                    <label htmlFor="zoverworld">Z</label>
-                    <input name="zoverworld" type="text" onChange={handleInputOwrdZ} value={zOwrd} />
-                </div>
-            </div>
-
-            <div className={styles.FormCalc}>
-                <h3>Nether</h3>
-                <p>Coord. Aproximadas</p>
-                <div>
-                    <label htmlFor="xnether">X</label>
-                    <input name="xnether" type="text" onChange={handleInputNetherX} value={xNether} />
-                </div>
-                <div>
-                    <label htmlFor="ynether">Y</label>
-                    <input name="ynether" type="text" onChange={handleInputNetherY} value={yNether} />
-                </div>
-                <div>
-                    <label htmlFor="znether">Z</label>
-                    <input name="znether" type="text" onChange={handleInputNetherZ} value={zNether} />
-                </div>
-            </div>
+            <FormCalc 
+                calcName='overworld' 
+                xValue={xOwrd} 
+                yValue={yOwrd} 
+                zValue={zOwrd} 
+                setXValue={handleInputOwrdX}
+                setYValue={handleInputOwrdY}
+                setZValue={handleInputOwrdZ}
+            />
+            <FormCalc 
+                calcName='nether' 
+                xValue={xNether} 
+                yValue={yNether} 
+                zValue={zNether} 
+                setXValue={handleInputNetherX}
+                setYValue={handleInputNetherY}
+                setZValue={handleInputNetherZ}
+            />
         </div>
     )
 }

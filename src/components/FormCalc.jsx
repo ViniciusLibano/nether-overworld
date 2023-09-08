@@ -18,7 +18,7 @@ export default function FormCalc({calcName, xValue, yValue, zValue, setXValue, s
                     id={x} 
                     name={x} 
                     type="text" 
-                    onChange={(e) => setXValue(e.target.value)}
+                    onChange={setXValue}
                 />
             </div>
             <div>
@@ -28,7 +28,7 @@ export default function FormCalc({calcName, xValue, yValue, zValue, setXValue, s
                     id={y} 
                     name={y} 
                     type="text" 
-                    onChange={(e) => setYValue(e.target.value)}
+                    onChange={setYValue}
                 />
             </div>
             <div>
@@ -38,7 +38,7 @@ export default function FormCalc({calcName, xValue, yValue, zValue, setXValue, s
                     id={z} 
                     name={z} 
                     type="text" 
-                    onChange={(e) => setZValue(e.target.value)}
+                    onChange={setZValue}
                 />
             </div>
         </div>
