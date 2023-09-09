@@ -1,3 +1,8 @@
+@font-face {
+  font-family: minecraftFont;
+  src: url(../src/assets/Minecraft.ttf);
+}
+
 #root {
   width: 100vw;
   height: 100vh;
@@ -5,4 +10,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }

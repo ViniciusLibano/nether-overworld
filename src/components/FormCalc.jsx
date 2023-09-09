@@ -12,7 +12,7 @@ export default function FormCalc({calcName, xValue, yValue, zValue, setXValue, s
             <h3>{String(calcName).toUpperCase()}</h3>
             <p>Coord. aproximadas</p>
             <div>
-                <label htmlFor={x}>X</label>
+                <label htmlFor={x}>X:</label>
                 <input 
                     value={xValue} 
                     id={x} 
@@ -22,7 +22,7 @@ export default function FormCalc({calcName, xValue, yValue, zValue, setXValue, s
                 />
             </div>
             <div>
-                <label htmlFor={y}>Y</label>
+                <label htmlFor={y}>Y:</label>
                 <input 
                     value={yValue} 
                     id={y} 
@@ -32,7 +32,7 @@ export default function FormCalc({calcName, xValue, yValue, zValue, setXValue, s
                 />
             </div>
             <div>
-                <label htmlFor={z}>Z</label>
+                <label htmlFor={z}>Z:</label>
                 <input 
                     value={zValue} 
                     id={z} 
