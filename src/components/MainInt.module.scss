@@ -1,3 +1,6 @@
+$borderPattern: 3px solid rgb(19, 17, 18);
+$generalBgc: linear-gradient(360deg,#751fa780, #411b9930);
+
 .MainInt {
     width: 100vw;
     height: 100vh;
@@ -7,13 +10,17 @@
     backdrop-filter: blur(5px);
     
     > div:nth-child(1) {
-        border-right: 2px solid white;
+        border-right: $borderPattern;
+    }
+
+    > div {
+        background: $generalBgc;
     }
 }
 
 @media (orientation: portrait) {
     .MainInt > div:nth-child(1) {
-        border-bottom: 2px solid white;
+        border-bottom: $borderPattern;
         border-right: none;
     }
 }
@@ -24,8 +31,7 @@
         height: 50vh;
         
         grid-template-columns: repeat(2, 1fr);
-        border: 2px solid white;
-        border-radius: 10px;
+        border: $borderPattern;
         backdrop-filter: blur(8px);
     }
 }
@@ -33,6 +39,5 @@
 @media (orientation: landscape) and (max-width: 899px) {
     .MainInt {
         grid-template-columns: repeat(2, 1fr);
-        border-radius: 10px;
     }
 }
